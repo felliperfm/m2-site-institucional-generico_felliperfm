@@ -75,7 +75,7 @@ header {
     width: 60%;
 }
 
-.banner__button, .faq__button {
+.banner__button, .faq__button, .modal__button {
     padding: var(--button-padding);
     color: var(--button-color);
     background-color: var(--button-brand-default-background-color);
@@ -86,7 +86,7 @@ header {
     width: fit-content;
 }
 
-.banner__button:hover, .faq__button:hover {
+.banner__button:hover, .faq__button:hover, .modal__button:hover {
     cursor: pointer;
     background-color: var(--button-brand-hover-background-color);
     border: var(--button-brand-hover-border);
@@ -230,4 +230,67 @@ header {
 .footer {
     padding: 50px 0px;
     text-align: center;
+}
+
+.modalController {
+    padding: 0px;
+    border: none;
+}
+
+.modalController::backdrop {
+    background-color: rgba(25, 28, 31, 0.8);
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    background-color: var(--gray-2);
+    width: 31.25rem;
+    padding: 2.5rem 1.75rem;
+    border: 0.5rem solid var(--brand-1);
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeButton {
+    background-color: var(--gray-3);
+    color: var(--gray-5);
+    border: none;
+    border-radius: 3px;
+}
+
+.modal__text {
+    font-weight: var(--text3-font-weight);
+    font-size: var(--text3-font-size);
+    line-height: var(--text3-line-height);
+    color: var(--gray-4)   
+}
+
+.modal__input {
+    padding: var(--input-padding);
+    background-color: var(--input-default-background-color);
+    border: var(--input-default-border);
+    font-weight: var(--text1-font-weight);
+    font-size: var(--text1-font-size);
+    line-height: var(--text1-line-height);
+    color: var(--gray-4);
+}
+
+.modal__input:valid {
+    background-color: var(--input-valid-background-color);
+    border: var(--input-valid-border);
+}
+
+.modal__input:focus {
+    background-color: var(--input-focus-background-color);
+    border: var(--input-focus-border);
+}
+
+.modal__button {
+    width: 100%;
 }
