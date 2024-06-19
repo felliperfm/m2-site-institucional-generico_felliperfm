@@ -33,4 +33,28 @@
     --text4-font-weight: 600;
     --text4-font-size: 16px;
     --text4-line-height: 150%;
+
+    --input-padding: 14px 20px;
+    --input-default-background-color: var(--gray-1);
+    --input-default-border: 1px solid var(--gray-1);
+    --input-valid-background-color: var(--gray-3);
+    --input-valid-border: 1px solid var(--gray-3);
+    --input-focus-background-color: var(--gray-2);
+    --input-focus-border: 1px solid var(--brand-1);
+
+    --button-padding: 20px 32px;
+    --button-color: var(--gray-7);
+    --button-brand-default-background-color: var(--brand-1);
+    --button-brand-default-border: 1px solid var(--brand-1);
+    --button-brand-hover-background-color: var(--brand-2);
+    --button-brand-hover-border: 1px solid var(--brand-2);
+    --button-default-background-color: var(--gray-1);
+    --button-default-border: 1px solid var(--gray-7);
+
+    --vertical-padding: 5.125rem;
+    --lateral-padding: 13%;
+
+    --width-left-section: 49%;
+    --gap-section: 5%;
+    --width-right-section: 46%;
 }
