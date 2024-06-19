@@ -50,7 +50,9 @@
     --button-brand-hover-border: 1px solid var(--brand-2);
     --button-default-background-color: var(--gray-1);
     --button-default-border: 1px solid var(--gray-7);
-
+    
+    --header-height: 6.5rem;
+    --vertical-padding-plus-header: calc(var(--header-height) + var(--vertical-padding));
     --vertical-padding: 5.125rem;
     --lateral-padding: 13%;
 
