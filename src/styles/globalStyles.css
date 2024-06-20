@@ -51,10 +51,17 @@
     --button-default-background-color: var(--gray-1);
     --button-default-border: 1px solid var(--gray-7);
     
-    --header-height: 6.5rem;
-    --vertical-padding-plus-header: calc(var(--header-height) + var(--vertical-padding));
+    --vertical-padding-banner: 15.625rem;
     --vertical-padding: 5.125rem;
     --lateral-padding: 13%;
+    --callout-padding: 5rem 3.5rem;
+
+    --gap: 2rem;
+    --gap-banner: 2.75rem;
+    --gap-large: 4rem;
+    
+    --header-height: 6.5rem;
+    --vertical-padding-plus-header: calc(var(--header-height) + var(--vertical-padding));
 
     --width-left-section: 49%;
     --gap-section: 5%;
