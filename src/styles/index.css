@@ -30,17 +30,19 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: var(--gray-1);
     height: var(--header-height);
     border-bottom: 2px solid var(--brand-1);
+    padding: 0px var(--lateral-padding);
     z-index: 1;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0px var(--lateral-padding);
-    gap: 0.125rem;
+    width: 100%;
+    max-width: var(--max-width-full);
 }
 
 .header__button {
@@ -57,6 +59,11 @@ header {
     cursor: pointer;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+}
+
 .banner {
     background-color: var(--gray-2);
     display: flex;
@@ -64,6 +71,7 @@ header {
     gap: var(--gap-banner);
     align-items: center;
     padding: var(--vertical-padding-banner) var(--lateral-padding);
+    max-width: var(--max-width-full);
 }
 
 .banner__title {
@@ -107,6 +115,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: var(--gap-section);
+    max-width: var(--max-width-full);
 }
 
 .about__text {
@@ -118,13 +127,19 @@ header {
     text-align: justify;
 }
 
+.banner-section,
+.faq-section,
+.comments-section {
+    background-color: var(--gray-2);
+}
+
 .faq {
     padding: var(--vertical-padding) var(--lateral-padding);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: var(--gray-2);
-    gap: var(--gap-section)
+    gap: var(--gap-section);
+    max-width: var(--max-width-full);
 }
 
 .faq-left {
@@ -172,8 +187,8 @@ header {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: var(--gray-2);
     gap: var(--gap-section);
+    max-width: var(--max-width-full);
 }
 
 .comments-right {
@@ -309,7 +324,7 @@ header {
     width: 100%;
 }
 
-@media(max-width: 750px) {
+@media(max-width: 780px) {
 
     .about,
     .faq,

@@ -66,4 +66,6 @@
     --width-left-section: 49%;
     --gap-section: 5%;
     --width-right-section: 46%;
+
+    --max-width-full: 1256px;
 }
